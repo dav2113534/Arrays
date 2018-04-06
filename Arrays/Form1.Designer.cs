@@ -34,9 +34,10 @@
             // 
             // btnClear
             // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(40, 86);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(94, 32);
+            this.btnClear.Size = new System.Drawing.Size(100, 32);
             this.btnClear.TabIndex = 0;
             this.btnClear.Text = "Arrays One";
             this.btnClear.UseVisualStyleBackColor = true;

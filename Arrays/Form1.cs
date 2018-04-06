@@ -22,17 +22,18 @@ namespace Arrays
             listBox1.Items.Clear();
 
             int[] lottery_numbers;
-            lottery_numbers = new int[4];
-
+            lottery_numbers = new int[49];
+            /*
             lottery_numbers[0] =1;
             lottery_numbers[1] =2;
             lottery_numbers[2] =3;
             lottery_numbers[3] =4;
-
-            listBox1.Items.Add(lottery_numbers[0]);
-            listBox1.Items.Add(lottery_numbers[1]);
-            listBox1.Items.Add(lottery_numbers[2]);
-            listBox1.Items.Add(lottery_numbers[3]);
+            */
+            for (int i = 0; i != (lottery_numbers.Length); i++)
+            {
+                lottery_numbers[i] = i + 1;
+                listBox1.Items.Add(lottery_numbers[i]);
+            }
 
         }
     }
