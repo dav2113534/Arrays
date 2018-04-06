@@ -81,6 +81,7 @@
             this.btnTimesTables.TabIndex = 4;
             this.btnTimesTables.Text = "Exercise: Times Table";
             this.btnTimesTables.UseVisualStyleBackColor = true;
+            this.btnTimesTables.Click += new System.EventHandler(this.btnTimesTables_Click);
             // 
             // Form1
             // 

@@ -55,5 +55,21 @@ namespace Arrays
                 listBox1.Items.Add(arraySize[i]);
             }
         }
+
+        private void btnTimesTables_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+
+            int[] aryTimes;
+            aryTimes = new int[10];
+
+            int times = int.Parse(textBox1.Text);
+
+            for (int i = 0; i != (aryTimes.Length); i++)
+            {
+                aryTimes[i] = i * times;
+                listBox1.Items.Add(times + " X " + i + " = " + aryTimes[i]);
+            }
+        }
     }
 }
