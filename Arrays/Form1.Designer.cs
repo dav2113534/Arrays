@@ -32,6 +32,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnSetArraySize = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnTimesTables = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClear
@@ -72,11 +73,21 @@
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 3;
             // 
+            // btnTimesTables
+            // 
+            this.btnTimesTables.Location = new System.Drawing.Point(12, 399);
+            this.btnTimesTables.Name = "btnTimesTables";
+            this.btnTimesTables.Size = new System.Drawing.Size(281, 38);
+            this.btnTimesTables.TabIndex = 4;
+            this.btnTimesTables.Text = "Exercise: Times Table";
+            this.btnTimesTables.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 522);
+            this.Controls.Add(this.btnTimesTables);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnSetArraySize);
             this.Controls.Add(this.listBox1);
@@ -94,6 +105,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnSetArraySize;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnTimesTables;
     }
 }
 
