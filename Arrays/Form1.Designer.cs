@@ -30,6 +30,8 @@
         {
             this.btnClear = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnSetArraySize = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnClear
@@ -52,16 +54,37 @@
             this.listBox1.Size = new System.Drawing.Size(164, 184);
             this.listBox1.TabIndex = 1;
             // 
+            // btnSetArraySize
+            // 
+            this.btnSetArraySize.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSetArraySize.Location = new System.Drawing.Point(12, 324);
+            this.btnSetArraySize.Name = "btnSetArraySize";
+            this.btnSetArraySize.Size = new System.Drawing.Size(281, 37);
+            this.btnSetArraySize.TabIndex = 2;
+            this.btnSetArraySize.Text = "Set the Array Size at RunTime";
+            this.btnSetArraySize.UseVisualStyleBackColor = true;
+            this.btnSetArraySize.Click += new System.EventHandler(this.btnSetArraySize_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(332, 324);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 26);
+            this.textBox1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 522);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnSetArraySize);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnClear);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,6 +92,8 @@
 
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnSetArraySize;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
