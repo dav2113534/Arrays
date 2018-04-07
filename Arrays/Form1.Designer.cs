@@ -33,12 +33,14 @@
             this.btnSetArraySize = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnTimesTables = new System.Windows.Forms.Button();
+            this.btn2DimensionalArray = new System.Windows.Forms.Button();
+            this.btnStringArrays = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(40, 86);
+            this.btnClear.Location = new System.Drawing.Point(26, 44);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 32);
             this.btnClear.TabIndex = 0;
@@ -50,15 +52,15 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(191, 86);
+            this.listBox1.Location = new System.Drawing.Point(175, 44);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(164, 184);
+            this.listBox1.Size = new System.Drawing.Size(285, 184);
             this.listBox1.TabIndex = 1;
             // 
             // btnSetArraySize
             // 
             this.btnSetArraySize.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSetArraySize.Location = new System.Drawing.Point(12, 324);
+            this.btnSetArraySize.Location = new System.Drawing.Point(12, 264);
             this.btnSetArraySize.Name = "btnSetArraySize";
             this.btnSetArraySize.Size = new System.Drawing.Size(281, 37);
             this.btnSetArraySize.TabIndex = 2;
@@ -68,14 +70,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(332, 324);
+            this.textBox1.Location = new System.Drawing.Point(329, 275);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 3;
             // 
             // btnTimesTables
             // 
-            this.btnTimesTables.Location = new System.Drawing.Point(12, 399);
+            this.btnTimesTables.Location = new System.Drawing.Point(12, 307);
             this.btnTimesTables.Name = "btnTimesTables";
             this.btnTimesTables.Size = new System.Drawing.Size(281, 38);
             this.btnTimesTables.TabIndex = 4;
@@ -83,11 +85,33 @@
             this.btnTimesTables.UseVisualStyleBackColor = true;
             this.btnTimesTables.Click += new System.EventHandler(this.btnTimesTables_Click);
             // 
+            // btn2DimensionalArray
+            // 
+            this.btn2DimensionalArray.Location = new System.Drawing.Point(12, 351);
+            this.btn2DimensionalArray.Name = "btn2DimensionalArray";
+            this.btn2DimensionalArray.Size = new System.Drawing.Size(281, 36);
+            this.btn2DimensionalArray.TabIndex = 5;
+            this.btn2DimensionalArray.Text = "2-Dimensional Array";
+            this.btn2DimensionalArray.UseVisualStyleBackColor = true;
+            this.btn2DimensionalArray.Click += new System.EventHandler(this.btn2DimensionalArray_Click);
+            // 
+            // btnStringArrays
+            // 
+            this.btnStringArrays.Location = new System.Drawing.Point(12, 393);
+            this.btnStringArrays.Name = "btnStringArrays";
+            this.btnStringArrays.Size = new System.Drawing.Size(281, 37);
+            this.btnStringArrays.TabIndex = 6;
+            this.btnStringArrays.Text = "String Arrays";
+            this.btnStringArrays.UseVisualStyleBackColor = true;
+            this.btnStringArrays.Click += new System.EventHandler(this.btnStringArrays_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 522);
+            this.ClientSize = new System.Drawing.Size(612, 605);
+            this.Controls.Add(this.btnStringArrays);
+            this.Controls.Add(this.btn2DimensionalArray);
             this.Controls.Add(this.btnTimesTables);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnSetArraySize);
@@ -107,6 +131,8 @@
         private System.Windows.Forms.Button btnSetArraySize;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnTimesTables;
+        private System.Windows.Forms.Button btn2DimensionalArray;
+        private System.Windows.Forms.Button btnStringArrays;
     }
 }
 

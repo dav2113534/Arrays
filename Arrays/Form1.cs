@@ -42,6 +42,8 @@ namespace Arrays
 
         private void btnSetArraySize_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
+
             int aNumber = int.Parse(textBox1.Text);
 
             int[] arraySize;
@@ -60,8 +62,9 @@ namespace Arrays
         {
             listBox1.Items.Clear();
 
+            // created 
             int[] aryTimes;
-            aryTimes = new int[10];
+            aryTimes = new int[11];
 
             int times = int.Parse(textBox1.Text);
 
@@ -69,6 +72,56 @@ namespace Arrays
             {
                 aryTimes[i] = i * times;
                 listBox1.Items.Add(times + " X " + i + " = " + aryTimes[i]);
+            }
+        }
+
+        private void btn2DimensionalArray_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+
+            int arrayRows = int.Parse(textBox1.Text);
+            int arrayCols = 3;
+
+            int[,] arrayTimes;
+            arrayTimes = new int[arrayRows, arrayCols];
+
+            int mult = 0;
+
+            for (int i = 0; i != arrayRows; i++)
+            {
+                mult = mult + 10;
+
+                for (int j = 0; j != arrayCols; j++)
+                {
+                    arrayTimes[i, j] = mult;
+                    mult = mult * 10;
+
+                    // This will display array position and values
+                    listBox1.Items.Add("arrayPos = " + i + "." + j +
+                            " " + " Val = " + arrayTimes[i, j]);
+                } 
+
+                mult = mult / 1000;
+            }
+        }
+
+        private void btnStringArrays_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear(); 
+
+            string[] arrayStrings;
+            arrayStrings = new string[5];
+
+            arrayStrings[0] = "This";
+            arrayStrings[1] = "is";
+            arrayStrings[2] = "a";
+            arrayStrings[3] = "string";
+            arrayStrings[4] = "array";
+
+            // foreach loops don't need to use index #'s like for loops
+            foreach (string arrayElement in arrayStrings)
+            {
+                listBox1.Items.Add(arrayElement);
             }
         }
     }
